@@ -47,7 +47,7 @@ uiux:
 # JS Effect Switches
 js_effect:
     fade: true
-    smoothscroll: false
+    smoothscroll: true
 
 # Reading experience
 reading:
@@ -65,12 +65,12 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    # purecolor: "#F5F5F5"
+    purecolor: "#F5F5F5"
     #bgimg: "/img/bg.png"
     bing:
         enable: true
         parameter:
-            type=N,S
+            type=N
 
 # Images Settings
 img:
