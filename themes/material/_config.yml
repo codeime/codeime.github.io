@@ -47,7 +47,7 @@ uiux:
 # JS Effect Switches
 js_effect:
     fade: true
-    smoothscroll: false
+    smoothscroll: true
 
 # Reading experience
 reading:
@@ -65,12 +65,12 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    # purecolor: "#F5F5F5"
+    purecolor: "#F5F5F5"
     #bgimg: "/img/bg.png"
     bing:
         enable: true
         parameter:
-            type=N,S
+            type=N
 
 # Images Settings
 img:
@@ -99,7 +99,7 @@ card_elevation: 2
 # Copyright
 # Specify the date when the site was setup.
 #   For example, if you set it as 2015, then footer will show '© 2015 - 2017'
-copyright_since:
+copyright_since: 2017
 
 # Qrcode for redirect at other device
 #   use: choose which method to generate the qrcode for each posts.
@@ -151,7 +151,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "mailto :guobing93@163.com"
+            link: "mailto:guobing93@163.com"
             icon: email
     homepage:
         use: true
