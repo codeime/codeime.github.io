@@ -151,7 +151,7 @@ sns_share:
 sidebar:
     dropdown:
         Email Me:
-            link: "mailto :guobing93@163.com"
+            link: "mailto:guobing93@163.com"
             icon: email
     homepage:
         use: true
