@@ -1,2 +1,2 @@
 # guobing1993.github.io
-my blog
+我个人博客的源文件
