@@ -2,7 +2,7 @@
 title: hello world
 date: 2017-05-14 12:46:42
 categories: "闲谈"
-tags:
+tags: "走路"
 ---
 <center style="color:#666;font-size:20px">
  路还很长.

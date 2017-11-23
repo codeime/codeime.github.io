@@ -82,3 +82,18 @@ deploy:
   type: git
   repo: git@github.com:guobing1993/guobing1993.github.io.git
   branch: master
+
+
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+
+search:
+  path: search.xml
+  field: all

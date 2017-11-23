@@ -2,7 +2,7 @@
 title: less is more
 date: 2017-07-17 16:30:10
 categories: "css"
-tags:
+tags: ["less","css","gulp"]
 ---
 『less is more』这句名言是著名的现代主义建筑大师——密斯·凡·德·罗提出的。
 
