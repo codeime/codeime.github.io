@@ -1,7 +1,8 @@
 ---
 title: ubuntu on windows 初体验
 date: 2017-11-03 09:28:23
-tags:
+categories: "工具"
+tags: ["linux","ubuntu","windows","nodejs"]
 ---
 
    早在10月17日的1709的版本更新中，Linux子系统正式来到win10,对于新鲜事物充满激情的我怎么也得折腾一番啊，ubuntu是Linux的一个发行版本而已。

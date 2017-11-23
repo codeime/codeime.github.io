@@ -18,7 +18,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: atom.xml
     daily_pic: "#"
     logo: "#"
 
@@ -207,15 +207,16 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use: google
+    use: local
     swiftype_key:
 
 # Analytics Systems
 # Available value:
 #     baidu | google | cnzz
 analytics:
-    use:
-    site_id:
+    use: baidu
+    site_id: d701ec1d65a816fcaba5d0dc4452f6bb
+
 
 # Leancloud Views
 leancloud:
@@ -226,7 +227,7 @@ leancloud:
 
 # Busuanzi 不蒜子 Views
 busuanzi:
-    enable: false
-    all_site_uv: false
-    post_pv: false
+    enable: true
+    all_site_uv: true
+    post_pv: true
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
