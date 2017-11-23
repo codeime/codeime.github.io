@@ -1,6 +1,7 @@
 ---
 title: ubuntu on windows 初体验
 date: 2017-11-03 09:28:23
+categories: "工具"
 tags:
 ---
 
