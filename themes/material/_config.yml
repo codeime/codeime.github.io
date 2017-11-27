@@ -29,7 +29,7 @@ url:
 
 # Schemes
 scheme: Paradox
-#scheme: Isolation
+# scheme: Isolation
 
 # UI & UX: slogan, color, effect
 uiux:
@@ -102,7 +102,7 @@ copyright_since: 2017
 # You can specify the text you want to show in footer, HTML tag is supported.
 #   For example, you can setup ICP license number as:
 #       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
-footer_text:
+footer_text:  如果你有梦想，就要去捍卫它。  
 # Qrcode for redirect at other device
 #   use: choose which method to generate the qrcode for each posts.
 #       Available value of "use": plugin | online
