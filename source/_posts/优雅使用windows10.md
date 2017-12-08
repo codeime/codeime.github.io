@@ -35,7 +35,7 @@ tags: 'windows10'
 
 #### 11.软件推荐(点击名称可跳转下载地址)
 
-* 压缩：[Peazip](http://www.peazip.org/)
+* 压缩：[Peazip](http://www.peazip.org/)&nbsp;&nbsp;、&nbsp;&nbsp;[Bandizip](https://www.bandisoft.com/bandizip/cn/)
 * 截图：[Snipaste商店版](https://www.microsoft.com/zh-cn/store/p/snipaste/9p1wxpkb68kx);|[普通版](https://zh.snipaste.com/)
 * 视频：[potPlayer](http://potplayer.daum.net/?lang=zh_CN)&nbsp;&nbsp;、&nbsp;&nbsp;[哔哩哔哩动画](https://www.microsoft.com/zh-cn/store/p/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A8%E7%94%BB/9nblggh5q5fv)
 * 音乐：[网易云音乐uwp](https://www.microsoft.com/zh-cn/store/p/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90uwp/9nblggh6g0jf)&nbsp;&nbsp;、&nbsp;&nbsp;[qq音乐UWP](https://www.microsoft.com/zh-cn/store/p/qq%E9%9F%B3%E4%B9%90/9wzdncrfj1q1)
