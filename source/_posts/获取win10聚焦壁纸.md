@@ -1,6 +1,7 @@
 ---
 title: 获取win10聚焦壁纸
 date: 2017-12-26 21:03:32
+categories: '技巧'
 tags: ['nodejs','win10']
 ---
 
@@ -19,19 +20,19 @@ C:\Users\bing\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw
 ![聚焦的文件](http://upload-images.jianshu.io/upload_images/6191737-eaa3958a828aadfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 聪明的我又想到了：要不手动加个后缀名。正如聪明的我想的这样是行得通的。通过一连串帅气的操作：
-    1. ctrl+a全选，ctrl+c复制，
-    2. 到桌面 新建文件夹 
-    3. 进入刚刚新建的文件夹 ctrl+v。
+1. ctrl+a全选，ctrl+c复制，
+2. 到桌面 新建文件夹 
+3. 进入刚刚新建的文件夹 ctrl+v。
 然后一个个改名？no no no.作为一个爱偷懒的人我是不会这个做的。
 
 首先 想到 cmd的ren命令
-   1.在刚刚新建的文件夹下新建一个文本文件
-   2.用记事本打开  键入  
-   ```
-   ren * *.png
-   ```
-   3.重命名该文本文件为 xxx.bat
-   4.点击.bat文件，然后该文件夹下所有的文件都变成以.png结尾的文件
+1.在刚刚新建的文件夹下新建一个文本文件
+2.用记事本打开  键入  
+```
+ren * *.png
+```
+3.重命名该文本文件为 xxx.bat
+4.点击.bat文件，然后该文件夹下所有的文件都变成以.png结尾的文件
 
 不久之后 我写了几句java,带界面的选择文件夹后自己手动键入后缀名来批量修改，不过还是得手动拷贝出来之后。运行效果如下：
 ![image.png](http://upload-images.jianshu.io/upload_images/6191737-2c45554db973986d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -45,11 +46,11 @@ C:\Users\bing\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw
 最近我在想我要自动拷贝win10聚焦的图片到某个文件夹下。
 
 首先 分析得出已知条件如下：
-    1. 源文件夹，即聚焦壁纸所在文件夹
-    2. 源文件的 二进制（十六进制视图）以FFD8FF开头的就是jpg文件，文件头是89504E47就是png文件。
+1. 源文件夹，即聚焦壁纸所在文件夹
+2. 源文件的 二进制（十六进制视图）以FFD8FF开头的就是jpg文件，文件头是89504E47就是png文件。
 
 现在的问题：
-    1.想要在不同的电脑上运行，源文件是在用户下的即如下：
+1.想要在不同的电脑上运行，源文件是在用户下的即如下：
 ```
 C:\Users\用户\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets
 ```
@@ -64,7 +65,7 @@ process.env.localappdata就可以了。
 于是开始写代码了。
 敲啊敲，，，，，敲啊敲，，，，，敲啊敲，，，，，
 加上为了练习Promise而改造的两个异步函数也就100行代码。
-```
+```javascript
 const fs = require('fs');
 const path = require('path');
 const imageInfo = require('image-info');
@@ -87,31 +88,21 @@ try {
 /*读取源文件目录下的所有文件*/
 const files = fs.readdirSync(src);
 files.forEach(file => {
-
 	const stats = fs.statSync(path.join(src, file));
-
 	if (stats.isFile()) {
-
 		readFile(path.join(src, file))
 		.then(function(data){
 			/*判断文件后缀*/
 			const tempData = data.slice(0, 7);
 			let filename;
 			if (tempData.indexOf(Buffer.from('FFD8FF', "hex")) != -1) {
-
 				filename = path.join(target, file + ".jpg");
-
 			} else if (tempData.indexOf(Buffer.from('89504E47', 'hex')) != -1) {
-
 				filename = path.join(target, file + ".png");
 			}
-
 			if (filename) {
-
 				fs.writeFile(filename, data, err=>{
-
-					if (err) console.log(err);
-					
+					if (err) console.log(err);			
 					imgInfo(filename)
 					.then(function(data){
 						/*过滤掉小文件*/
@@ -145,19 +136,18 @@ function readFile(path){
 		})
 	})
 }
-
 function imgInfo(filename){
 	return new Promise(function(resolve,reject){
 		imageInfo(filename, (err, info) => {
 			if(err){
 				reject(err);
 			}
-			resolve(info);
-			
+			resolve(info);		
 		})	
 	})
 }
 ```
+
 真的不到100行啊......
 运行后：
 ![image.png](http://upload-images.jianshu.io/upload_images/6191737-9bf79bd062a9006a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

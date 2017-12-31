@@ -119,7 +119,7 @@ qrcode:
 #    Prettify
 #        theme: # Available value in /source/css/prettify/[theme].min.css
 prettify:
-    enable: true
+    enable: false
     theme: "github-v2"
 
 #    Hanabi (https://github.com/egoist/hanabi)
