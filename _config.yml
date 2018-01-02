@@ -5,14 +5,14 @@
 # Site
 title: "myBlog"
 subtitle:
-description:
+description: "分享生活点滴"
 author: 郭兵 
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.guobing.win
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
