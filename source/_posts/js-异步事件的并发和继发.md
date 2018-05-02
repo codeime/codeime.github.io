@@ -1,0 +1,101 @@
+---
+title: js 异步事件的并发和继发
+date: 2018-05-02 16:40:30
+tags: ["js","nodejs"]
+categories: "js"
+---
+
+什么时候用并发什么时候用继发？
+ 同时有多个io操作，彼此不依赖，此时应该并发，时长是这多个操作中最长的那个（可能会多一点）。
+
+ 多个io操作,2需要1的结果，3需要2的结果，此时应该继发，时长是这多个io的总和（还要多）。
+
+
+
+
+```
+//模拟一个耗时操作
+function get(a){
+	return new Promise(function(resolve,reject){
+		setTimeout(function(){
+			console.log(a);
+			resolve();
+		},2000)
+	})
+};
+
+/*测试*/
+async function test(){
+	try{
+
+		//1.继发 
+		/*await get("11111111111");
+		await get("22222222222");
+		await get("33333333333");
+		await get("44444444444");*/
+
+		//2.并发 
+		/*let a= get("11111111111");
+		let b= get("22222222222");
+		let c= get("33333333333");
+		let d= get("44444444444");
+		await a;
+		await b;
+		await c;
+		await d;*/
+
+		//3继发
+		/*let a= get("11111111111");
+		await a;
+		let b= get("22222222222");
+		await b;
+		let c= get("33333333333");
+		await c;
+		let d= get("44444444444");
+		await d;*/
+
+
+
+		//4并发
+		/*await Promise.all([
+			get("11111111111"),
+			get("22222222222"),
+			get("33333333333"),
+			get("44444444444"),
+			]);*/
+
+		//5继发
+		/*let  pArr=[
+			11111111111,
+			22222222222,
+			33333333333,
+			44444444444,
+			];
+		for(let p of pArr){
+			await get(p);
+		}*/
+
+		//6并发
+		/*let  pArr=[
+			11111111111,
+			22222222222,
+			33333333333,
+			44444444444,
+			];
+		pArr.forEach(async p=>{
+			await get(p);
+		});
+		*/
+	}catch(e){
+		console.error(e)
+	}
+
+}
+
+test();
+```
+依次放开注释1-6处代码，在控制台输入 
+```
+node index
+```
+观察打印
