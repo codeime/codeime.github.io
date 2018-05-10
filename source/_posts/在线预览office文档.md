@@ -48,6 +48,6 @@ wdEmbedCode: 1(允许)/0(不允许)
 `https://view.officeapps.live.com/op/embed.aspx?src=${_url}&wdStartOn=1&wdPrint=1&wdEmbedCode=1`
 ```
 值得注意的一点是：
-####文件大小限制 10M !
-###文件大小限制 10M !!
-##文件大小限制 10M !!!
+#### 文件大小限制 10M !
+### 文件大小限制 10M !!
+## 文件大小限制 10M !!!
