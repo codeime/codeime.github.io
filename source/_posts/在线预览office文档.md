@@ -9,7 +9,7 @@ tags: ["js"]
 
 [点我可以去](https://products.office.com/en-us/office-online/view-office-documents-online)如下图的地方。
 
-看下图只需要我们将一个文件的地址输入然后点击那个绿油油的 <span style="background-color:#008a00">Create URL</span> 按钮按钮就会生成一个预览连接，然后就可以愉快的预览我们的文件了。
+看下图只需要我们将一个文件的地址输入然后点击那个绿油油的 <span style="background-color:#008a00;color:#fff;">Create URL</span> 按钮按钮就会生成一个预览连接，然后就可以愉快的预览我们的文件了。
 
 
 ![image.png](https://upload-images.jianshu.io/upload_images/6191737-0f608c4efc17094a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
