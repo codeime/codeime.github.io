@@ -1,7 +1,7 @@
 ---
 title: 获取win10聚焦壁纸
 date: 2017-12-26 21:03:32
-categories: '技巧'
+categories: 'js'
 tags: ['nodejs','win10']
 ---
 
