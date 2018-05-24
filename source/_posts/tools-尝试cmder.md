@@ -1,5 +1,5 @@
 ---
-title: tools_尝试cmder
+title: 尝试cmder
 date: 2018-05-19 21:57:00
 categories: "工具"
 tags: ["windows"]
