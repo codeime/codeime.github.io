@@ -139,7 +139,18 @@ hanabi:
 #   For example, you can setup a CC license as:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
-license: 
+license:
+
+# Gallery Panel
+# You must activate Formspree before using
+gallery:
+    panel_show: false
+    left_show: true
+    left_title: Introduction
+    left_info: This is a Example.
+    right_show: true
+    right_title: Get in touch
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -160,7 +171,7 @@ sns:
     weibo:
     instagram:
     tumblr:
-    github:
+    github: https://github.com/guobing1993
     linkedin:
     zhihu:
     bilibili:
