@@ -15,3 +15,14 @@ tags: ["js"]
 ![dom_change.png](https://ws1.sinaimg.cn/large/781ff8c9gy1g7g4d5tdqkj20zx0kg77t.jpg)
 
 </center>
+
+<center>
+
+![dom变化.png](https://ws1.sinaimg.cn/large/781ff8c9gy1g7hx9fbu38j20ca0hljrt.jpg)
+
+注意这里每一块的高度是不一致的
+</center>
+
+看到这里是不是觉得和手机通讯录的联系人列表很相似尼。是的,通讯录右侧字母可以导航到指定首字母位置,滑动列表时字母列表也要高亮当前所在位置的字母。
+
+也许想到这里会蹦出一个想法‘这还不简单,安装个库就搞定了-- better-scroll’; 不假,better-scroll 确实可以做,并且我已经先用better-scroll 实现过了,只不过 better-scroll 对鼠标事件并不友好,偶尔出现字体模糊情况。况且为了这安装一个依赖感觉有些像为了某个一方法把整个lodash库引入一样傻。
