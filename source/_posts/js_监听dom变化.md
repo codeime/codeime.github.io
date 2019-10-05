@@ -199,3 +199,12 @@ export const DomObserver = (function () {
 
 ```
 现在代码中配置那一块是写死在代码中的，如果要面临更多的场景何以把配置作为参数传入，并提供默认值的方式使得该部分代码变得更加的灵活易用。
+
+封装后使用
+```javascript
+let observer = new DomObserver(scrollBox)
+
+observer.on('refresh', () => {
+   _calcHeight()
+})
+```
