@@ -10,18 +10,15 @@ tags: ["js"]
 现在回忆到这,才知道我那一声‘嗯’深藏功与名（夸张了,夸张了,只怪自己还是个弟弟）。
 
 这个是页面的大概模样,类似tab页,不同的是下面是滚动的,每一块高度不固定。并且操作的响应是双向的：点击按钮时要滚动到对应的页,鼠标滚轮在下面滚动的时候tab按钮也要高亮当前可见块对应的按钮。
-<center>
+
 
 ![dom_change.png](https://ws1.sinaimg.cn/large/781ff8c9gy1g7g4d5tdqkj20zx0kg77t.jpg)
 
-</center>
-
-<center>
 
 ![dom变化.png](https://ws1.sinaimg.cn/large/781ff8c9gy1g7hx9fbu38j20ca0hljrt.jpg)
 
 注意这里每一块的高度是不一致的
-</center>
+
 
 看到这里是不是觉得和手机通讯录的联系人列表很相似尼。是的,通讯录右侧字母可以导航到指定首字母位置,滑动列表时字母列表也要高亮当前所在位置的字母。
 
@@ -39,11 +36,8 @@ tags: ["js"]
 
 收集距离 [X0, X1, X2, X3, X4, X5, X6]
 
-<center>
+![距离](https://ws1.sinaimg.cn/large/781ff8c9ly1g7nesn0y9mj20mc0rsgme.jpg)
 
-![](https://ws1.sinaimg.cn/large/781ff8c9ly1g7nesn0y9mj20mc0rsgme.jpg)
-
-</center>
 
 接下来监听滚动时获取滚动距离，看属于哪个区间就给对应的tab高亮;点击tab时给整个块设置滚动高度（需要一个状态属性告诉滚动监听的方法不用设置高亮）。
 
