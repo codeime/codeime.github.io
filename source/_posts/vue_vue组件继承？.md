@@ -1,5 +1,5 @@
 ---
-title: vue_vue组件继承？
+title: vue组件继承？
 date: 2019-10-07 19:43:07
 tags:
 ---
