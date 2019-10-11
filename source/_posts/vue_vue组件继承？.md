@@ -90,7 +90,7 @@ export default {
 import baseFrame from './baseFrame'
 export default {
     name: 'mailFrame',
-    mixins: [baseFrame],
+    mixins: [baseFrame], // 也可以用 extends:baseFrame
     data() { return {} },
     methods: {
         showContent(content = '') {
