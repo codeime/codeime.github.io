@@ -108,5 +108,62 @@ class EventBus{
 }
 ```
 
+6. 再来移除单个订阅，移除单个订阅时支持传入第二个参数用来移除该类型事件的具体响应事件,如果不传则移除该类事件的所有响应。
+
+
+```js
+class EventBus{
+    constructor(){
+        this._events={}
+    }
+    on(type, fn, ctx){
+        if(!this._events[type]){
+            this._events[type]=[]
+        }
+        this._events[type].push([fn, ctx])
+    }
+    emit(type){
+        const events = this._events[type]
+        if(!events){
+            return
+        }
+        let len=events.length
+        let copyEvents=[...events] 
+        for(let i = 0;i < len; i++){
+            let event=copyEvents[i]
+            let [fn,ctx] = event
+            if(fn){
+                fn.apply(ctx, [].slice.call(arguemnts,1))
+            }
+        }
+
+    }
+    offAll(){
+        this._events = {} // 谈笑间灰飞烟灭
+    }
+
+    off(type,fn){
+        let events=this._events[type]
+        if(!events){
+            return
+        }
+        if(!fn){
+           this._events[type]=null
+           return  
+        }
+        let count=events.length
+        while(count--){
+            if(events[count][0]===fn||(events[count][0]&&events[count][0].fn===fn)){ //TODO: once放前面
+                events.splice(count,1)
+            }
+        }
+    }
+}
+```
+
+
+
+
+
 
 
