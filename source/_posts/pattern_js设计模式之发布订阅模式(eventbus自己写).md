@@ -93,7 +93,7 @@ class EventBus{
             return
         }
         let len=events.length
-        let copyEvents=[...events]  //TODO: 知道这里为什么拷贝一份吗？后面见答案。
+        let copyEvents=[...events]  // 避免原数组在遍历过程层发生改变带来的影响
         for(let i = 0;i < len; i++){
             let event=copyEvents[i]
             let [fn,ctx] = event
@@ -201,7 +201,7 @@ class EventBus{
            return  
         }
         let count=events.length
-        while(count--){
+        while(count--){ // 避免数组位移
             if(events[count][0]===fn||(events[count][0]&&events[count][0].fn===fn)){ 
                 events.splice(count,1)
             }
