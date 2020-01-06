@@ -30,7 +30,7 @@ var v = "123";
 num a = 123;
 String v = "123";
 ```
-一个类型一断确定就不可以变成其他类型
+一个类型一旦确定就不可以变成其他类型
 ```dart
 var a = 123;
 a="123";  //此时编辑器就会飘红告诉你说 ‘一个String类型的值不能赋值给一个int类型的变量’
@@ -68,7 +68,7 @@ foo(789);
 ```
 ## 2.3 数据类型
 
-anumber 类型: num int double
+number 类型: num int double
 int 和 double 继承 num
 ```dart
 int a = 12;
@@ -81,7 +81,7 @@ double b = 6.5;
 字符串 String 
 ```dart
 String str1 = 'test \n test';
-String str2 = r'test \n test'; // r会使转义失效
+String str2 = r'test \n test'; // r会使转义失效 python中也有这个r
 
 可以先javascript es6中一样使用模板字符串(稍有区别)
 
@@ -139,7 +139,7 @@ m2.containsValue(123)
   print(a - b);
   print(a * b);
   print(a / b);
-  print(a ~/ b);
+  print(a ~/ b); // python中是双斜线 //
   print(a % b);
 
   print(a++);
