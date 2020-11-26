@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sequelize同步表结构 | GuoBing&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/img/favicon.png">
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.9bcdb81a.css" as="style"><link rel="preload" href="/assets/js/app.3d904a69.js" as="script"><link rel="preload" href="/assets/js/2.3e037fbb.js" as="script"><link rel="preload" href="/assets/js/15.c16c83c6.js" as="script"><link rel="prefetch" href="/assets/js/10.810d4954.js"><link rel="prefetch" href="/assets/js/11.504d015c.js"><link rel="prefetch" href="/assets/js/12.2102eeee.js"><link rel="prefetch" href="/assets/js/13.ad5db155.js"><link rel="prefetch" href="/assets/js/14.30f205e6.js"><link rel="prefetch" href="/assets/js/16.28258dac.js"><link rel="prefetch" href="/assets/js/17.859bd140.js"><link rel="prefetch" href="/assets/js/18.e048512a.js"><link rel="prefetch" href="/assets/js/19.e181569c.js"><link rel="prefetch" href="/assets/js/20.cd429fa7.js"><link rel="prefetch" href="/assets/js/21.bc1a2921.js"><link rel="prefetch" href="/assets/js/22.8fb6dc86.js"><link rel="prefetch" href="/assets/js/23.25991f9f.js"><link rel="prefetch" href="/assets/js/24.ce395e53.js"><link rel="prefetch" href="/assets/js/25.981c1623.js"><link rel="prefetch" href="/assets/js/26.2c5137f0.js"><link rel="prefetch" href="/assets/js/27.3838f9b0.js"><link rel="prefetch" href="/assets/js/28.376c04e0.js"><link rel="prefetch" href="/assets/js/29.94e7f6a5.js"><link rel="prefetch" href="/assets/js/3.48a5a03a.js"><link rel="prefetch" href="/assets/js/4.2b7fc900.js"><link rel="prefetch" href="/assets/js/5.0b5e05ba.js"><link rel="prefetch" href="/assets/js/6.1596653b.js"><link rel="prefetch" href="/assets/js/7.532f9659.js"><link rel="prefetch" href="/assets/js/8.30b0f060.js"><link rel="prefetch" href="/assets/js/9.289edf24.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9bcdb81a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuoBing's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/javascript/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/notes/javascript/监听dom变化.html" class="sidebar-link">监听dom变化</a></li><li><a href="/notes/javascript/获取win10聚焦壁纸.html" class="sidebar-link">获取win10聚焦壁纸</a></li><li><a href="/notes/javascript/异步事件的并发和继发.html" class="sidebar-link">js 异步事件的并发和继发</a></li><li><a href="/notes/javascript/在线预览office文档.html" class="sidebar-link">在线预览office文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/javascript/在线预览office文档.html#文件大小限制-10m-3" class="sidebar-link">文件大小限制 10M !!!</a></li></ul></li><li><a href="/notes/javascript/node的两个常用文件夹操作.html" class="sidebar-link">node的两个常用文件夹操作</a></li><li><a href="/notes/javascript/js设计模式之发布订阅模式.html" class="sidebar-link">js设计模式之发布订阅模式</a></li><li><a href="/notes/javascript/sequelize同步表结构.html" class="active sidebar-link">sequelize同步表结构</a></li><li><a href="/notes/javascript/use-async-await.html" class="sidebar-link">使用新语法 async</a></li><li><a href="/notes/javascript/vue组件继承.html" class="sidebar-link">vue组件继承</a></li><li><a href="/notes/javascript/webpack打包生成ejs入口文件.html" class="sidebar-link">webpack打包生成ejs入口文件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/css/" class="sidebar-link">Introduction</a></li><li><a href="/notes/css/less-is-more.html" class="sidebar-link">less is more</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/css/当BEM遇到less.html" class="sidebar-link">当BEM遇到less</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Dart</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/dart/" class="sidebar-link">Introduction</a></li><li><a href="/notes/dart/dart基础.html" class="sidebar-link">dart语言基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_1-1-入口函数" class="sidebar-link">1.1 入口函数</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-1-var-和-dynamic" class="sidebar-link">2.1  var 和 dynamic</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-2-const-和-final" class="sidebar-link">2.2 const 和 final</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-3-数据类型" class="sidebar-link">2.3 数据类型</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-1-算术运算" class="sidebar-link">3.1 算术运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-2-赋值运算" class="sidebar-link">3.2 赋值运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-3-条件表达式（三目运算）" class="sidebar-link">3.3 条件表达式（三目运算）</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-4-逻辑运算" class="sidebar-link">3.4 逻辑运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-5-关系型运行算符" class="sidebar-link">3.5 关系型运行算符</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-1-类的申明、对象创建、属性、方法、可见性、计算属性" class="sidebar-link">6.1 类的申明、对象创建、属性、方法、可见性、计算属性</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-2-构造方法、命名构造方法、常量构造方法、工厂构造方法" class="sidebar-link">6.2 构造方法、命名构造方法、常量构造方法、工厂构造方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-3-初始化列表、静态成员、操作符、call方法" class="sidebar-link">6.3 初始化列表、静态成员、操作符、call方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-4-继承-抽象-接口-mixinxs-操作符重载" class="sidebar-link">6.4 继承 抽象 接口 mixinxs 操作符重载</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Tools</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/tools/" class="sidebar-link">Introduction</a></li><li><a href="/notes/tools/优雅使用windows10.html" class="sidebar-link">优雅使用windows10</a></li><li><a href="/notes/tools/尝试cmder.html" class="sidebar-link">尝试cmder</a></li><li><a href="/notes/tools/在多个设备上同步sublime设置.html" class="sidebar-link">在多个设备上同步sublime设置</a></li><li><a href="/notes/tools/windows上docker安装及使用.html" class="sidebar-link">windows上docker安装及使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/tools/live-share.html" class="sidebar-link">live share 了解一下</a></li><li><a href="/notes/tools/ubuntu-on-windows-初体验.html" class="sidebar-link">ubuntu on windows 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="写在前面的废话"><a href="#写在前面的废话" class="header-anchor">#</a> 写在前面的废话</h4> <p>要过年了，我想回家😂（本来写了一大段，后来我删了。主要是我认为有点冗余了）</p> <h4 id="开始"><a href="#开始" class="header-anchor">#</a> 开始</h4> <p>环境：mysql、nodejs
+依赖：sequelize、mysql2
+编辑器：随意</p> <h4 id="代码"><a href="#代码" class="header-anchor">#</a> 代码</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 引包 --&gt;
+const Sequelize = require('sequelize');
+
+&lt;!-- 创建连接 --&gt;
+let sequelize = new Sequelize(
+   'test', 
+   'root',
+   'root', 
+   {
+   host: 'localhost',
+   port: '3306',
+   dialect: 'mysql',
+   pool: {
+       max: 5,
+       min: 0,
+       idle: 30000
+       }
+   }
+);
+
+&lt;!-- 定义模型 --&gt;
+let User = sequelize.define(&quot;user&quot;, {
+   email: {
+       type: Sequelize.STRING(100),
+       unique: true
+   },
+   password: Sequelize.STRING(100),
+   name: Sequelize.STRING(50),
+   gender: Sequelize.BOOLEAN,
+});
+
+&lt;!-- 同步模型结构到数据库 --&gt;
+sequelize.sync({force: true});  
+
+</code></pre></div><p>运行过后，数据库里的test(先建好这个库)下面就会有新的uers表出现。
+这里的代码仅作示例使用。该操作会删掉整个表重新建表，属于DDL操作不可回滚。
+开发过程中在代码中要判断当前环境是否是测试环境来使用同步表结构。
+另外在开发过程中 数据库的连接、模型的定义、同步表结构就要分包分模块。</p> <p>还有个sequelize-auto的包可以把sql直接生成模型（就是上面代码中定义模型那一段的模型），如此一来岂不是用PowerDesigner画好实体关系图，再导出sql,再生成实体模型。👈新锅炒旧饭。</p> <p>其实还是多写写sql比较好。</p> <h4 id="晕死的经历"><a href="#晕死的经历" class="header-anchor">#</a> 晕死的经历</h4> <p>我在运行我的代码后，打开Navicat看表的创建是否成功，打开test看啥也没看到,然后重复数次依然不行，在代码里打各种log,终端里也显示各种成功。然而Navicat里依然没有，整整debug了三周都没有。后来偶然发现Navicat连的是机房mysql,居然犯这种错误,真是够枪毙几分钟的。</p> <hr> <p>急着回家，不想写太多🤘。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/javascript/js设计模式之发布订阅模式.html" class="prev">
+        js设计模式之发布订阅模式
+      </a></span> <span class="next"><a href="/notes/javascript/use-async-await.html">
+        使用新语法 async
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3d904a69.js" defer></script><script src="/assets/js/2.3e037fbb.js" defer></script><script src="/assets/js/15.c16c83c6.js" defer></script>
+  </body>
+</html>

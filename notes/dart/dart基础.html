@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>dart语言基础 | GuoBing&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/img/favicon.png">
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.9bcdb81a.css" as="style"><link rel="preload" href="/assets/js/app.3d904a69.js" as="script"><link rel="preload" href="/assets/js/2.3e037fbb.js" as="script"><link rel="preload" href="/assets/js/10.810d4954.js" as="script"><link rel="prefetch" href="/assets/js/11.504d015c.js"><link rel="prefetch" href="/assets/js/12.2102eeee.js"><link rel="prefetch" href="/assets/js/13.ad5db155.js"><link rel="prefetch" href="/assets/js/14.30f205e6.js"><link rel="prefetch" href="/assets/js/15.c16c83c6.js"><link rel="prefetch" href="/assets/js/16.28258dac.js"><link rel="prefetch" href="/assets/js/17.859bd140.js"><link rel="prefetch" href="/assets/js/18.e048512a.js"><link rel="prefetch" href="/assets/js/19.e181569c.js"><link rel="prefetch" href="/assets/js/20.cd429fa7.js"><link rel="prefetch" href="/assets/js/21.bc1a2921.js"><link rel="prefetch" href="/assets/js/22.8fb6dc86.js"><link rel="prefetch" href="/assets/js/23.25991f9f.js"><link rel="prefetch" href="/assets/js/24.ce395e53.js"><link rel="prefetch" href="/assets/js/25.981c1623.js"><link rel="prefetch" href="/assets/js/26.2c5137f0.js"><link rel="prefetch" href="/assets/js/27.3838f9b0.js"><link rel="prefetch" href="/assets/js/28.376c04e0.js"><link rel="prefetch" href="/assets/js/29.94e7f6a5.js"><link rel="prefetch" href="/assets/js/3.48a5a03a.js"><link rel="prefetch" href="/assets/js/4.2b7fc900.js"><link rel="prefetch" href="/assets/js/5.0b5e05ba.js"><link rel="prefetch" href="/assets/js/6.1596653b.js"><link rel="prefetch" href="/assets/js/7.532f9659.js"><link rel="prefetch" href="/assets/js/8.30b0f060.js"><link rel="prefetch" href="/assets/js/9.289edf24.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9bcdb81a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuoBing's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/javascript/" class="sidebar-link">Introduction</a></li><li><a href="/notes/javascript/监听dom变化.html" class="sidebar-link">监听dom变化</a></li><li><a href="/notes/javascript/获取win10聚焦壁纸.html" class="sidebar-link">获取win10聚焦壁纸</a></li><li><a href="/notes/javascript/异步事件的并发和继发.html" class="sidebar-link">js 异步事件的并发和继发</a></li><li><a href="/notes/javascript/在线预览office文档.html" class="sidebar-link">在线预览office文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/javascript/在线预览office文档.html#文件大小限制-10m-3" class="sidebar-link">文件大小限制 10M !!!</a></li></ul></li><li><a href="/notes/javascript/node的两个常用文件夹操作.html" class="sidebar-link">node的两个常用文件夹操作</a></li><li><a href="/notes/javascript/js设计模式之发布订阅模式.html" class="sidebar-link">js设计模式之发布订阅模式</a></li><li><a href="/notes/javascript/sequelize同步表结构.html" class="sidebar-link">sequelize同步表结构</a></li><li><a href="/notes/javascript/use-async-await.html" class="sidebar-link">使用新语法 async</a></li><li><a href="/notes/javascript/vue组件继承.html" class="sidebar-link">vue组件继承</a></li><li><a href="/notes/javascript/webpack打包生成ejs入口文件.html" class="sidebar-link">webpack打包生成ejs入口文件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/css/" class="sidebar-link">Introduction</a></li><li><a href="/notes/css/less-is-more.html" class="sidebar-link">less is more</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/css/当BEM遇到less.html" class="sidebar-link">当BEM遇到less</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Dart</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/dart/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/notes/dart/dart基础.html" class="active sidebar-link">dart语言基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_1-1-入口函数" class="sidebar-link">1.1 入口函数</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-1-var-和-dynamic" class="sidebar-link">2.1  var 和 dynamic</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-2-const-和-final" class="sidebar-link">2.2 const 和 final</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-3-数据类型" class="sidebar-link">2.3 数据类型</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-1-算术运算" class="sidebar-link">3.1 算术运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-2-赋值运算" class="sidebar-link">3.2 赋值运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-3-条件表达式（三目运算）" class="sidebar-link">3.3 条件表达式（三目运算）</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-4-逻辑运算" class="sidebar-link">3.4 逻辑运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-5-关系型运行算符" class="sidebar-link">3.5 关系型运行算符</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-1-类的申明、对象创建、属性、方法、可见性、计算属性" class="sidebar-link">6.1 类的申明、对象创建、属性、方法、可见性、计算属性</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-2-构造方法、命名构造方法、常量构造方法、工厂构造方法" class="sidebar-link">6.2 构造方法、命名构造方法、常量构造方法、工厂构造方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-3-初始化列表、静态成员、操作符、call方法" class="sidebar-link">6.3 初始化列表、静态成员、操作符、call方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-4-继承-抽象-接口-mixinxs-操作符重载" class="sidebar-link">6.4 继承 抽象 接口 mixinxs 操作符重载</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Tools</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/tools/" class="sidebar-link">Introduction</a></li><li><a href="/notes/tools/优雅使用windows10.html" class="sidebar-link">优雅使用windows10</a></li><li><a href="/notes/tools/尝试cmder.html" class="sidebar-link">尝试cmder</a></li><li><a href="/notes/tools/在多个设备上同步sublime设置.html" class="sidebar-link">在多个设备上同步sublime设置</a></li><li><a href="/notes/tools/windows上docker安装及使用.html" class="sidebar-link">windows上docker安装及使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/tools/live-share.html" class="sidebar-link">live share 了解一下</a></li><li><a href="/notes/tools/ubuntu-on-windows-初体验.html" class="sidebar-link">ubuntu on windows 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_1-开始"><a href="#_1-开始" class="header-anchor">#</a> 1. 开始</h1> <h2 id="_1-1-入口函数"><a href="#_1-1-入口函数" class="header-anchor">#</a> 1.1 入口函数</h2> <p>首先是入口函数 main (程序的入口)， void 指明该函数的返回值为空或者说没有返回值</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h1 id="_2-数据类型"><a href="#_2-数据类型" class="header-anchor">#</a> 2. 数据类型</h1> <h2 id="_2-1-var-和-dynamic"><a href="#_2-1-var-和-dynamic" class="header-anchor">#</a> 2.1  var 和 dynamic</h2> <p>var 声明的变量（在编译时期）会自动推断变量类型</p> <p>比如你这个人很懒，类型都不想写，所以写出来的代码是下面这坨（这个字自己领会）</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> v <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>这两行代码在编译之后其实是有类型的和如下代码一样的效果</p> <div class="language-dart extra-class"><pre class="language-dart"><code>num a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+String v <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><p>一个类型一旦确定就不可以变成其他类型</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+a<span class="token operator">=</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">;</span>  <span class="token comment">//此时编辑器就会飘红告诉你说 ‘一个String类型的值不能赋值给一个int类型的变量’</span>
+</code></pre></div><p>偏偏有些时候,代码是这样的</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">var</span> a<span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+</code></pre></div><p>这个代码是完全可以跑起来的，怎么回事？前面不是说'一个类型一断确定就不可以变成其他类型',其实这句话没错,错的是'var a;'这句没法推断出类型啊，所以就按dynamic类型来处理的。dynamic就是它的字面意思。dynamic 会关闭类型检查,它声明的变量类型在运行时才会确定。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">dynamic</span> a <span class="token operator">=</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">;</span>
+a <span class="token operator">=</span> <span class="token number">456</span><span class="token punctuation">;</span>
+a<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 这一句在我们写代码的时候完全不会提示有错误，在代码运行的时候走到这里就会crash</span>
+</code></pre></div><h2 id="_2-2-const-和-final"><a href="#_2-2-const-和-final" class="header-anchor">#</a> 2.2 const 和 final</h2> <p>在 dart 里 const 和 final 都是用来定义常量的，那为啥子定义个常量要搞两个关键词尼？其实区别是 const 是编译时常量,而 final 是运行时常量。</p> <p>const 关键字定义的常量在代码中写死。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">const</span> num w <span class="token operator">=</span> <span class="token number">300</span><span class="token punctuation">;</span>  
+w <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span> <span class="token comment">// 此时编辑器会提示 w是个常量不能赋值，要么移除w定义前面的const关键字，要么移除 这行代码。</span>
+</code></pre></div><p>final 关键字定义该值只能被赋值一次。只是它的具体的值在编译期可以为null 待到运行时才确定。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">void</span> <span class="token function">foo</span><span class="token punctuation">(</span>int a<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">final</span> int aa <span class="token operator">=</span> a<span class="token punctuation">;</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>aa<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">456</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_2-3-数据类型"><a href="#_2-3-数据类型" class="header-anchor">#</a> 2.3 数据类型</h2> <p>number 类型: num int double
+int 和 double 继承 num</p> <div class="language-dart extra-class"><pre class="language-dart"><code>int a <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+a<span class="token punctuation">.</span>isEven  <span class="token comment">// true</span>
+a<span class="token punctuation">.</span>isOdd   <span class="token comment">// false</span>
+double b <span class="token operator">=</span> <span class="token number">6.5</span><span class="token punctuation">;</span>
+</code></pre></div><p>常用方法有 toDouble、 toInt、 round、 ceil、 floor</p> <p>字符串 String</p> <div class="language-dart extra-class"><pre class="language-dart"><code>String str1 <span class="token operator">=</span> <span class="token string">'test \n test'</span><span class="token punctuation">;</span>
+String str2 <span class="token operator">=</span> <span class="token string">r'test \n test'</span><span class="token punctuation">;</span> <span class="token comment">// r会使转义失效 python中也有这个r</span>
+
+可以先javascript es6中一样使用模板字符串<span class="token punctuation">(</span>稍有区别<span class="token punctuation">)</span>
+
+String split<span class="token operator">=</span> <span class="token string">'-----'</span><span class="token punctuation">;</span>
+
+String str3 <span class="token operator">=</span> <span class="token string">'test${split}test'</span><span class="token punctuation">;</span>
+
+String str4 <span class="token operator">=</span> <span class="token string">'123$split'</span><span class="token punctuation">;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>str3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>布尔 boolean</p> <div class="language-dart extra-class"><pre class="language-dart"><code>bool isLoading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><p>数组 List</p> <div class="language-dart extra-class"><pre class="language-dart"><code>List list<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+list<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+List list1<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">List</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print</span><span class="token punctuation">(</span>list1<span class="token punctuation">)</span>
+
+list<span class="token punctuation">.</span><span class="token function">asMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 转换成 map 类型</span>
+</code></pre></div><p>键值对 map</p> <div class="language-dart extra-class"><pre class="language-dart"><code>Map m <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">123</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token number">456</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">print</span><span class="token punctuation">(</span>m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+Map m2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 常用属性</span>
+m2<span class="token punctuation">.</span>length
+m2<span class="token punctuation">.</span>isEmpty <span class="token comment">// 返回布尔值</span>
+m2<span class="token punctuation">.</span>isNotEmpty <span class="token comment">// 返回布尔值</span>
+m2<span class="token punctuation">.</span>keys <span class="token comment">// 返回素有的键</span>
+m2<span class="token punctuation">.</span>values <span class="token comment">// 返回所有的值</span>
+
+<span class="token comment">//常用方法</span>
+m2<span class="token punctuation">.</span><span class="token function">containsKey</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> 
+m2<span class="token punctuation">.</span><span class="token function">containsValue</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span>
+
+</code></pre></div><h1 id="_3-运算符"><a href="#_3-运算符" class="header-anchor">#</a> 3.运算符</h1> <h2 id="_3-1-算术运算"><a href="#_3-1-算术运算" class="header-anchor">#</a> 3.1 算术运算</h2> <p>加、减、乘、除、取整、取余</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  int a <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+  int b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">+</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">-</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">*</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">/</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">~/</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// python中是双斜线 //</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">%</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token operator">++</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token operator">--</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="_3-2-赋值运算"><a href="#_3-2-赋值运算" class="header-anchor">#</a> 3.2 赋值运算</h2> <p>dart 中有个比较风骚的赋值操作符  ??=</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  int a<span class="token punctuation">;</span>
+  int b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> 
+  
+  a<span class="token operator">?</span><span class="token operator">?</span> <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">// a 为 null 吗？ 是：将 10 赋值给 a; 不是：不进行操作。双问号起短路作用 </span>
+  b<span class="token operator">?</span><span class="token operator">?</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+</code></pre></div><p>另外就是一些很平常的赋值操作</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  int a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  int b <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+ 
+  a <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  a <span class="token operator">-=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  a <span class="token operator">*=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// a /= 2;</span>
+  a <span class="token operator">~/=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  a <span class="token operator">%=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_3-3-条件表达式（三目运算）"><a href="#_3-3-条件表达式（三目运算）" class="header-anchor">#</a> 3.3 条件表达式（三目运算）</h2> <div class="language-dart extra-class"><pre class="language-dart"><code>  int color<span class="token punctuation">;</span>
+  int nowColor<span class="token operator">=</span> color <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span><span class="token string">'red'</span><span class="token punctuation">:</span>color<span class="token punctuation">;</span>
+  <span class="token comment">// 在dart中 ？？ 操作符可以简化这种操作</span>
+  
+  int nowColor <span class="token operator">=</span> color<span class="token operator">?</span><span class="token operator">?</span><span class="token string">'red'</span> 
+  
+</code></pre></div><h2 id="_3-4-逻辑运算"><a href="#_3-4-逻辑运算" class="header-anchor">#</a> 3.4 逻辑运算</h2> <p>与或非</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  bool isTrue <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token operator">!</span>isTrue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  bool isFalse <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>isTrue <span class="token operator">&amp;&amp;</span> isFalse<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>isTrue <span class="token operator">||</span> isFalse<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  String str <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span><span class="token operator">!</span>str<span class="token punctuation">.</span>isEmpty<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_3-5-关系型运行算符"><a href="#_3-5-关系型运行算符" class="header-anchor">#</a> 3.5 关系型运行算符</h2> <p>关系型运算符常用来比较两个值之间的关系返回true或false,常用在流程控制语句中。</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  int a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+  int b <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">==</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">!=</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">&gt;</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">&lt;</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">&gt;=</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>a <span class="token operator">&lt;=</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+  String str1 <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+  String str2 <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>str1 <span class="token operator">==</span> str2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h1 id="_4-流程控制语句"><a href="#_4-流程控制语句" class="header-anchor">#</a> * 4. 流程控制语句</h1> <p>if switch for  while (do while)   break continue</p> <h1 id="_5-函数"><a href="#_5-函数" class="header-anchor">#</a> 5. 函数</h1> <p>dart是强类型的语言,在函数的声明（定义）时，要明确指定参数的数据类型以及该函数的返回值类型，没有返回值时返回值类型是 void</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  String <span class="token function">getAllName</span><span class="token punctuation">(</span>String firstName<span class="token punctuation">,</span>String secondName<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">'${firstName}-${secondName}'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>函数的类型是 Function , 可以将函数当作参数传入到调用的函数中，也可以调用一个函数返回一个新的函数（有关闭包）</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">void</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token function">callback</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  int a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  Function fn <span class="token operator">=</span> <span class="token function">getSomeFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">void</span> <span class="token function">getSomeFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      int a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>匿名函数，顾名思义匿名函数就是没有名字的函数。在上面的 getSomeFn 中已经出现过了匿名函数。下面是一些立即执行的匿名函数</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  <span class="token comment">// 写法一</span>
+  <span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 写法二</span>
+  <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token number">456</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 写法三</span>
+  <span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">789</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>函数参数之可选参数。</p> <p>dart 提供非常灵活的传参方式，这对编程体验来非常棒；dart 中函数的可选参数需要用 {} 包裹，放在必选参数的后面。</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">void</span> <span class="token function">fn1</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> int age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'name=$name,age=$age'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token keyword">void</span> <span class="token function">fn2</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> <span class="token punctuation">{</span>int age<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'name=$name,age=$age'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>函数参数之默认值。</p> <p>在上面可选参数的示例中如果可选参数没有传则默认为 null ,有些时候这可不是我们想要的，这时候可以给可选参数设置默认值,当没有传该值的时候参数会自动取默认值。</p> <div class="language-dart extra-class"><pre class="language-dart"><code>  <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">void</span> <span class="token function">fn2</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> <span class="token punctuation">{</span>int age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'name=$name,age=$age'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>值得注意的是 必选参数 在传值的时候必须按照参数列表的顺序
+而可选参数则不必，但是 必须 以 ‘参数名:值’的方式传值。</p> <h1 id="_6-面向对象"><a href="#_6-面向对象" class="header-anchor">#</a> 6. 面向对象</h1> <p>在面向对象的语言设计中，对象通常是类的实例，而类（class）则是对象的一种抽象，描述这一类对象具有的属性和行为特征。</p> <h2 id="_6-1-类的申明、对象创建、属性、方法、可见性、计算属性"><a href="#_6-1-类的申明、对象创建、属性、方法、可见性、计算属性" class="header-anchor">#</a> 6.1 类的申明、对象创建、属性、方法、可见性、计算属性</h2> <p>在dart中描述一个类需要使用 class 关键字,而实例化一个对象则需要使用 new 关键字来说明是新建一个对象(注意：在dart 2 中可以将new 关键字省略)</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+  <span class="token comment">// 一些 属性和行为</span>
+<span class="token punctuation">}</span>
+Person xiaoming <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+Person xiaowang <span class="token operator">=</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>类中的属性会默认生成 getter setter 方法,当对一个实例的某个属性赋值或者取值时其实是调用的setter getter方法。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+   String name<span class="token punctuation">;</span>
+   int age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+Person xiaoming<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xiaoming<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;wangxiaoming&quot;</span><span class="token punctuation">;</span>
+xiaoming<span class="token punctuation">.</span>age<span class="token operator">=</span><span class="token number">19</span><span class="token punctuation">;</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print</span><span class="token punctuation">(</span>xiaoming<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>私有属性,私有方法。 dart 中没有private等关键字,目前在类中设置一个私有属性是通过 _ 的方式</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+
+    String _secret<span class="token punctuation">;</span>
+
+    <span class="token keyword">void</span> <span class="token function">_run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'xxx'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们也可以给类加上 _ ，表是该类只在当前文件（模块）中可以访问到。</p> <p>计算属性。 计算属性的值当然是通过计算得到的</p> <div class="language-dart extra-class"><pre class="language-dart"><code>
+
+ Rectangle rect <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  rect<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
+  rect<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>rect<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token punctuation">{</span>
+  num width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+  
+  num <span class="token keyword">get</span> area <span class="token operator">=</span><span class="token operator">&gt;</span> width <span class="token operator">*</span> height<span class="token punctuation">;</span>
+  <span class="token keyword">set</span> <span class="token function">area</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">//给area属性赋值时，可以计算出其他属性的值</span>
+    width <span class="token operator">=</span> value <span class="token operator">/</span> <span class="token number">20</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-2-构造方法、命名构造方法、常量构造方法、工厂构造方法"><a href="#_6-2-构造方法、命名构造方法、常量构造方法、工厂构造方法" class="header-anchor">#</a> 6.2 构造方法、命名构造方法、常量构造方法、工厂构造方法</h2> <p>构造函数和类同名,在类初始化的时候调用用来给对象成员赋初始值</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    String name<span class="token punctuation">;</span>
+    <span class="token function">Person</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>首先dart中构造方法并不能重载,如果一个类中要实现多个构造方法可以使用命名构造方法。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span>  <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    String name<span class="token punctuation">;</span>
+    int age<span class="token punctuation">;</span>
+    <span class="token function">Person</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span>int age<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    Persom<span class="token punctuation">.</span><span class="token function">withName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    Person<span class="token punctuation">.</span><span class="token function">withAge</span><span class="token punctuation">(</span>int age<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>常量构造函数,能够生成一个不再改变的对象。构造函数用const修饰，所有的属性采用 final 修饰。前面说过const 修饰的常量是编译时常量 。创建编译时常量只需要在调用构造函数 前加上 const 关键字即可。如果已经在一个常量上下文中那么调用构造函数前的const关键字可以省略。</p> <p>两个用相同参数生成的常量对象其实是同一个对象</p> <p>更多关于常量构造函数的讲解或示例可以到<a href="https://dart.dev/guides/language/language-tour#constant-constructors" target="_blank" rel="noopener noreferrer">官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>查看.</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    <span class="token keyword">final</span> String name<span class="token punctuation">;</span>
+    <span class="token keyword">final</span> int age<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> Person p <span class="token operator">=</span> <span class="token keyword">const</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> Person p2 <span class="token operator">=</span>  <span class="token function">Person</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p<span class="token operator">==</span>p2 <span class="token comment">// true</span>
+</code></pre></div><p>工厂构造方法，在实现构造函数时添加 factory 关键字实现一个工厂构造方法。工厂函数额调用和普通函数的调用一样。(工厂构造方法中不能访问 this )</p> <div class="language-dart extra-class"><pre class="language-dart"><code>Logger logger <span class="token operator">=</span> <span class="token function">Logger</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">)</span>
+logger<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Button clicked'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Logger</span> <span class="token punctuation">{</span>
+  <span class="token keyword">final</span> String name<span class="token punctuation">;</span>
+  bool mute <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// _cache is library-private, thanks to</span>
+  <span class="token comment">// the _ in front of its name.</span>
+  <span class="token keyword">static</span> <span class="token keyword">final</span> Map<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> Logger<span class="token operator">&gt;</span> _cache <span class="token operator">=</span>
+      <span class="token operator">&lt;</span>String<span class="token punctuation">,</span> Logger<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">factory</span> <span class="token function">Logger</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> _cache<span class="token punctuation">.</span><span class="token function">putIfAbsent</span><span class="token punctuation">(</span>
+        name<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> Logger<span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  Logger<span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">void</span> <span class="token function">log</span><span class="token punctuation">(</span>String msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>mute<span class="token punctuation">)</span> <span class="token function">print</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-3-初始化列表、静态成员、操作符、call方法"><a href="#_6-3-初始化列表、静态成员、操作符、call方法" class="header-anchor">#</a> 6.3 初始化列表、静态成员、操作符、call方法</h2> <p>在构造函数的函数体运行前，除了调用父类的构造方法,还可以初始化实例的变量。有时,当类的某些属性是 final 属性时,初始化列表将很有帮助。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  String name<span class="token punctuation">;</span>
+  int age<span class="token punctuation">;</span>
+  <span class="token keyword">final</span> String gender<span class="token punctuation">;</span>
+
+  <span class="token function">Person</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>gender<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Person<span class="token punctuation">.</span><span class="token function">withMap</span><span class="token punctuation">(</span>Map map<span class="token punctuation">)</span> <span class="token punctuation">:</span> gender <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'gender'</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  Person<span class="token punctuation">.</span><span class="token function">withMap2</span><span class="token punctuation">(</span>Map map<span class="token punctuation">)</span>
+      <span class="token punctuation">:</span> gender <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'gender'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        name <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">void</span> <span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'work'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>*注意在初始化列表的右侧不能访问this</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token comment">// 右侧指的时 等号 的右边  map['gender']</span>
+Person<span class="token punctuation">.</span><span class="token function">withMap</span><span class="token punctuation">(</span>Map map<span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>gender <span class="token operator">=</span> map<span class="token punctuation">[</span><span class="token string">'gender'</span><span class="token punctuation">]</span> 
+</code></pre></div><p>dart 中类的静态成员使用static关键字修饰。静态成员直接通过 className.xxx 来访问。静态变量在初次访问时初始化，静态方法中不能访问类实例this。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Page</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token keyword">const</span> int max <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> int now <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">pullDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    now <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">void</span> <span class="token function">pullUp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    now<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">print</span><span class="token punctuation">(</span>Page<span class="token punctuation">.</span>max<span class="token punctuation">)</span>
+</code></pre></div><p>对象操作符</p> <div class="language-dart extra-class"><pre class="language-dart"><code> <span class="token comment">// 1. 条件成员访问 ？.</span>
+  Person person<span class="token punctuation">;</span>
+  person<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// person存在时调用work</span>
+  <span class="token comment">// 2. 类型转换</span>
+  <span class="token keyword">var</span> p<span class="token punctuation">;</span>  <span class="token comment">// 前面说过var 在运行时会推断类型，但是没有初始值的时候 var 和 dynamic 一样 ,所以下面的 as 就是类型转换 </span>
+  p <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+  p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">(</span>p <span class="token operator">as</span> Person<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//3. 是否指定类型 is,is!</span>
+  <span class="token keyword">var</span> p2<span class="token punctuation">;</span>
+  p2 <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>p2 <span class="token operator">is</span> Person<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p2<span class="token punctuation">.</span><span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>p2 <span class="token operator">is!</span> Person<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'ohohoo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 4.级联操作  ..   （..会返回原对象）</span>
+  Person pp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  pp
+    <span class="token punctuation">.</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;bing&quot;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">21</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><p>call , 对象中实现call方法后，对象的实例可以看作一个方法来调用。</p> <div class="language-dart extra-class"><pre class="language-dart"><code>Person p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  p<span class="token punctuation">.</span><span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">p</span><span class="token punctuation">(</span><span class="token string">'bing'</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  String name<span class="token punctuation">;</span>
+  int age<span class="token punctuation">;</span>
+  <span class="token keyword">void</span> <span class="token function">work</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'work...'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">void</span> <span class="token function">call</span><span class="token punctuation">(</span>String name<span class="token punctuation">,</span> int age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'my name is $name,and my age  is $age'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-4-继承-抽象-接口-mixinxs-操作符重载"><a href="#_6-4-继承-抽象-接口-mixinxs-操作符重载" class="header-anchor">#</a> 6.4 继承 抽象 接口 mixinxs 操作符重载</h2> <p>类的继承通过 extends 实现, 子类可以继承父类的属性和方法。子类也可以通过‘重写’的形式修改某个方法的实现。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    String name<span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">job</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'job'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span><span class="token punctuation">{</span>
+    <span class="token metadata symbol">@override</span>
+    <span class="token keyword">void</span> <span class="token function">job</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'my job is study'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>abstract 关键字可以定义一个抽象类（不能被实例化）,目前在dart中这可以用来定义一个接口（dart中并没有interface关键字来专门定义接口）。除了抽象类还可以有抽象方法，抽象方法只能出现在抽象类中，并且没有方法体，用';'代替方法体。</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">{</span>
+    <span class="token keyword">void</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>dart 的类中都隐式的定义了接口，该接口包含了类的所有实例成员。如果只是先把一个类当作接口来用 使用 implements 关键字，并且实现所有类中的接口。</p> <p>除了继承这种代码的复用方式，dart中还可以使用混入的方式来进行代码复用;使用方法是：with关键字后面跟多个用逗号分隔的类名或者混入对象的名称（dart2.1之前都是使用抽象类代替）</p> <div class="language-dart extra-class"><pre class="language-dart"><code>mixin Play<span class="token punctuation">{</span>
+   <span class="token keyword">void</span> <span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'play game'</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Student</span> <span class="token keyword">extends</span> <span class="token class-name">Person</span> <span class="token keyword">with</span> Play<span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><p>dart 的类中还支持操作符的重载,具体使用如下：</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">var</span> p1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> p2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>p2 <span class="token operator">&gt;</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">print</span><span class="token punctuation">(</span>p2<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+<span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+  int age<span class="token punctuation">;</span>
+  <span class="token function">Person</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  bool <span class="token keyword">operator</span> <span class="token operator">&gt;</span><span class="token punctuation">(</span>Person p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">&gt;</span> p<span class="token punctuation">.</span>age<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  int <span class="token keyword">operator</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">(</span>String str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'age'</span> <span class="token operator">==</span> str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p><a href="https://dart.dev/guides/language/language-tour#overridable-operators" target="_blank" rel="noopener noreferrer">查看更多操作符重载内容<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/dart/" class="prev router-link-active">
+        Introduction
+      </a></span> <span class="next"><a href="/notes/tools/">
+        Introduction
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3d904a69.js" defer></script><script src="/assets/js/2.3e037fbb.js" defer></script><script src="/assets/js/10.810d4954.js" defer></script>
+  </body>
+</html>

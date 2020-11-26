@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用新语法 async | GuoBing&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/img/favicon.png">
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.9bcdb81a.css" as="style"><link rel="preload" href="/assets/js/app.3d904a69.js" as="script"><link rel="preload" href="/assets/js/2.3e037fbb.js" as="script"><link rel="preload" href="/assets/js/16.28258dac.js" as="script"><link rel="prefetch" href="/assets/js/10.810d4954.js"><link rel="prefetch" href="/assets/js/11.504d015c.js"><link rel="prefetch" href="/assets/js/12.2102eeee.js"><link rel="prefetch" href="/assets/js/13.ad5db155.js"><link rel="prefetch" href="/assets/js/14.30f205e6.js"><link rel="prefetch" href="/assets/js/15.c16c83c6.js"><link rel="prefetch" href="/assets/js/17.859bd140.js"><link rel="prefetch" href="/assets/js/18.e048512a.js"><link rel="prefetch" href="/assets/js/19.e181569c.js"><link rel="prefetch" href="/assets/js/20.cd429fa7.js"><link rel="prefetch" href="/assets/js/21.bc1a2921.js"><link rel="prefetch" href="/assets/js/22.8fb6dc86.js"><link rel="prefetch" href="/assets/js/23.25991f9f.js"><link rel="prefetch" href="/assets/js/24.ce395e53.js"><link rel="prefetch" href="/assets/js/25.981c1623.js"><link rel="prefetch" href="/assets/js/26.2c5137f0.js"><link rel="prefetch" href="/assets/js/27.3838f9b0.js"><link rel="prefetch" href="/assets/js/28.376c04e0.js"><link rel="prefetch" href="/assets/js/29.94e7f6a5.js"><link rel="prefetch" href="/assets/js/3.48a5a03a.js"><link rel="prefetch" href="/assets/js/4.2b7fc900.js"><link rel="prefetch" href="/assets/js/5.0b5e05ba.js"><link rel="prefetch" href="/assets/js/6.1596653b.js"><link rel="prefetch" href="/assets/js/7.532f9659.js"><link rel="prefetch" href="/assets/js/8.30b0f060.js"><link rel="prefetch" href="/assets/js/9.289edf24.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9bcdb81a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuoBing's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/javascript/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/notes/javascript/监听dom变化.html" class="sidebar-link">监听dom变化</a></li><li><a href="/notes/javascript/获取win10聚焦壁纸.html" class="sidebar-link">获取win10聚焦壁纸</a></li><li><a href="/notes/javascript/异步事件的并发和继发.html" class="sidebar-link">js 异步事件的并发和继发</a></li><li><a href="/notes/javascript/在线预览office文档.html" class="sidebar-link">在线预览office文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/javascript/在线预览office文档.html#文件大小限制-10m-3" class="sidebar-link">文件大小限制 10M !!!</a></li></ul></li><li><a href="/notes/javascript/node的两个常用文件夹操作.html" class="sidebar-link">node的两个常用文件夹操作</a></li><li><a href="/notes/javascript/js设计模式之发布订阅模式.html" class="sidebar-link">js设计模式之发布订阅模式</a></li><li><a href="/notes/javascript/sequelize同步表结构.html" class="sidebar-link">sequelize同步表结构</a></li><li><a href="/notes/javascript/use-async-await.html" aria-current="page" class="active sidebar-link">使用新语法 async</a></li><li><a href="/notes/javascript/vue组件继承.html" class="sidebar-link">vue组件继承</a></li><li><a href="/notes/javascript/webpack打包生成ejs入口文件.html" class="sidebar-link">webpack打包生成ejs入口文件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/css/" class="sidebar-link">Introduction</a></li><li><a href="/notes/css/less-is-more.html" class="sidebar-link">less is more</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/css/当BEM遇到less.html" class="sidebar-link">当BEM遇到less</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Dart</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/dart/" class="sidebar-link">Introduction</a></li><li><a href="/notes/dart/dart基础.html" class="sidebar-link">dart语言基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_1-1-入口函数" class="sidebar-link">1.1 入口函数</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-1-var-和-dynamic" class="sidebar-link">2.1  var 和 dynamic</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-2-const-和-final" class="sidebar-link">2.2 const 和 final</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_2-3-数据类型" class="sidebar-link">2.3 数据类型</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-1-算术运算" class="sidebar-link">3.1 算术运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-2-赋值运算" class="sidebar-link">3.2 赋值运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-3-条件表达式（三目运算）" class="sidebar-link">3.3 条件表达式（三目运算）</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-4-逻辑运算" class="sidebar-link">3.4 逻辑运算</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_3-5-关系型运行算符" class="sidebar-link">3.5 关系型运行算符</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-1-类的申明、对象创建、属性、方法、可见性、计算属性" class="sidebar-link">6.1 类的申明、对象创建、属性、方法、可见性、计算属性</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-2-构造方法、命名构造方法、常量构造方法、工厂构造方法" class="sidebar-link">6.2 构造方法、命名构造方法、常量构造方法、工厂构造方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-3-初始化列表、静态成员、操作符、call方法" class="sidebar-link">6.3 初始化列表、静态成员、操作符、call方法</a></li><li class="sidebar-sub-header"><a href="/notes/dart/dart基础.html#_6-4-继承-抽象-接口-mixinxs-操作符重载" class="sidebar-link">6.4 继承 抽象 接口 mixinxs 操作符重载</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Tools</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/tools/" class="sidebar-link">Introduction</a></li><li><a href="/notes/tools/优雅使用windows10.html" class="sidebar-link">优雅使用windows10</a></li><li><a href="/notes/tools/尝试cmder.html" class="sidebar-link">尝试cmder</a></li><li><a href="/notes/tools/在多个设备上同步sublime设置.html" class="sidebar-link">在多个设备上同步sublime设置</a></li><li><a href="/notes/tools/windows上docker安装及使用.html" class="sidebar-link">windows上docker安装及使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/tools/live-share.html" class="sidebar-link">live share 了解一下</a></li><li><a href="/notes/tools/ubuntu-on-windows-初体验.html" class="sidebar-link">ubuntu on windows 初体验</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>相信知道ajax的人都知道异步回调是怎么一回事。在一些业务中很容易写成下面这个恶心的代码：</p> <div class="language- extra-class"><pre class="language-text"><code>$.ajax({
+    succss:function(res){
+       $.ajax({
+           data:res.xxx
+           succss:function(res2){
+                $.ajax({
+                    data:res2.xxx
+
+                })
+            }
+      })
+    }
+})
+</code></pre></div><p>哦，反正我没写过这种ajax，看起来真的挺恶心的，所以拿来举例。
+但是，nodejs做后台的时候，这个情况就像下面：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    {
+        {
+            {
+                {
+                    {
+                        {
+                            {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre></div><p>唉~~~触目惊心,不仅仅阅读困难，维护起来也是要了老命啊。</p> <p>不过，别忘了ES6的Promise对象，都说字如其人，Promise这家伙是名如其人，就是一承诺：这件事我去做，做成了怎么怎么样，做不成就拿人头来谢罪。下面就是用Promise对fs.readFile()的包装以及使用：</p> <div class="language- extra-class"><pre class="language-text"><code> function readFile(path) {
+ 	return new Promise(function (resolve, reject) {
+ 		fs.readFile(path, (err, data) =&gt; {
+			if (err) {
+ 				reject(err);
+ 			}
+ 			resolve(data);
+ 		})
+ 	})
+ }
+
+ readFile(&quot;xxx&quot;)
+ .then(function(data){
+     ...
+ })
+ .catch(function(err){
+     ...  
+ })
+</code></pre></div><p>这么一来在观感上就要强很多，但自己的代码量也增加不少。好在有第三方的包替我们做了许多的工作例如 mz:</p> <div class="language- extra-class"><pre class="language-text"><code>const fs=require(&quot;mz/fs&quot;);
+
+ fs.readFile(&quot;xxx&quot;)
+ .then(function(data){
+   ...
+ })
+ .catch(function(err){
+     ...  
+ })
+</code></pre></div><p>很舒心有没有。。。。如果觉得答案是肯定的，小伙子，还是图样图森破。慢慢的写着写着就会发现有时一堆的then这样的东西。</p> <p>为了耍得更加欢快，还是用Generator：</p> <div class="language- extra-class"><pre class="language-text"><code>const fs=require(&quot;mz/fs&quot;);
+function * doSome(){
+    let a=yield fs.readfile(aaa);
+    let b=yield fs.readfile(bbb)
+    return b;
+}
+var f=doSome();
+f.next();
+f.next();
+f.next();
+</code></pre></div><p>终于 这异步写起来像同步代码了，但是需要 f.next() 方法一步一步往下执行，这样手动控制整个流程给人很不友好的感觉，好在有co库可以帮我们解决。</p> <p>不过co也没快活过太久，ES7标准中 带来了异步的新语法 async/await,其实这只不过是generator的语法糖，把*换成async,把yield换成await,并且自带执行器;这么一来就在语义上显得特别友好。</p> <div class="language- extra-class"><pre class="language-text"><code>const fs=require(&quot;mz/fs&quot;);
+ async function  doSome(){
+    let a=await fs.readfile(aaa);
+    let b=await fs.readfile(bbb)
+    return b;
+}
+var f=doSome();
+
+</code></pre></div><p>我仿佛看到了C#的影子、、、、、哈哈哈哈。</p> <p>光说不练瞎扯淡,于是乎我把上次做的那个获取win10壁纸的代码全部用async语法改造了，先贴旧的用then语法的：</p> <div class="language- extra-class"><pre class="language-text"><code>//old code
+old code
+const fs = require('fs');
+const path = require('path');
+const imageInfo = require('image-info');
+
+/*壁纸所在的源文件夹*/
+const src = path.join(process.env.localappdata, &quot;\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\&quot;);
+/*要拷贝到的文件夹：这个是在‘图片/spotlight’*/
+const target = path.join(process.env.userprofile, 'Pictures\\spotlight');
+
+/*判断spotlight文件夹是否存在*/
+try {
+	const s = fs.statSync(target);
+	if (!s.isDirectory()) {
+		fs.mkdirSync(target);
+	}
+} catch (error) {
+	fs.mkdirSync(target);
+}
+
+/*读取源文件目录下的所有文件*/
+const files = fs.readdirSync(src);
+files.forEach(file =&gt; {
+
+	const stats = fs.statSync(path.join(src, file));
+
+	if (stats.isFile()) {
+
+		readFile(path.join(src, file))
+			.then(function (data) {
+				/*判断文件后缀*/
+				const tempData = data.slice(0, 7);
+				let filename;
+				if (tempData.indexOf(Buffer.from('FFD8FF', &quot;hex&quot;)) != -1) {
+
+					filename = path.join(target, file + &quot;.jpg&quot;);
+
+				} else if (tempData.indexOf(Buffer.from('89504E47', 'hex')) != -1) {
+
+					filename = path.join(target, file + &quot;.png&quot;);
+				}
+
+				if (filename) {
+
+					fs.writeFile(filename, data, err =&gt; {
+
+						if (err) console.log(err);
+
+						imgInfo(filename)
+							.then(function (data) {
+								/*过滤掉小文件*/
+								var wh = data.height / data.width;
+								if (wh == 1) {
+									fs.unlink(filename, (err) =&gt; {
+										if (err) {
+											console.log(err)
+										}
+									})
+								}
+							})
+							.catch(function (err) {
+								console.log(err);
+							})
+					});
+				}
+			})
+			.catch(function (err) {
+				console.log(err);
+			})
+
+	}
+})
+
+function readFile(path) {
+	return new Promise(function (resolve, reject) {
+		fs.readFile(path, (err, data) =&gt; {
+			if (err) {
+				reject(err);
+			}
+			resolve(data);
+		})
+	})
+}
+
+function imgInfo(filename) {
+	return new Promise(function (resolve, reject) {
+		imageInfo(filename, (err, info) =&gt; {
+			if (err) {
+				reject(err);
+			}
+			resolve(info);
+
+		})
+	})
+}
+</code></pre></div><p>下面是async改造后的：</p> <div class="language- extra-class"><pre class="language-text"><code>const fs = require('mz/fs');
+const path = require('path');
+const imageInfo = require('image-info');
+
+/*壁纸所在的源文件夹*/
+const src = path.join(process.env.localappdata, &quot;\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets\\&quot;);
+/*要拷贝到的文件夹：这个是在‘图片/spotlight’*/
+const target = path.join(process.env.userprofile, 'Pictures\\spotlight');
+
+start();
+
+async function start() {
+	await checkdir();
+	await copyFile();
+}
+
+/*判断spotlight文件夹是否存在*/
+async function checkdir() {
+	try {
+		const s = await fs.stat(target);
+		if (!s.isDirectory()) {
+			await fs.mkdir(target);
+		}
+	} catch (error) {
+		await fs.mkdir(target);
+	}
+}
+
+/*读取源文件目录下的所有文件*/
+async function copyFile() {
+	const files = await fs.readdir(src);
+	files.forEach(async (file) =&gt; {
+		const stats = await fs.stat(path.join(src, file));
+		if (stats.isFile()) {
+			const data = await fs.readFile(path.join(src, file));
+			const tempData = data.slice(0, 7);
+			let filename;
+			if (tempData.indexOf(Buffer.from('FFD8FF', &quot;hex&quot;)) != -1) {
+
+				filename = path.join(target, file + &quot;.jpg&quot;);
+
+			} else if (tempData.indexOf(Buffer.from('89504E47', 'hex')) != -1) {
+
+				filename = path.join(target, file + &quot;.png&quot;);
+			}
+			if (filename) {
+
+				await fs.writeFile(filename, data);
+				const info = await imgInfo(filename);
+
+				var wh = info.height / info.width;
+				if (wh == 1) {
+					await fs.unlink(filename);
+				}
+
+			}
+		}
+
+	});
+}
+
+
+function imgInfo(filename) {
+	return new Promise(function (resolve, reject) {
+		imageInfo(filename, (err, info) =&gt; {
+			if (err) {
+				reject(err);
+			}
+			resolve(info);
+
+		})
+	})
+}
+</code></pre></div><p>没有对比就没有伤害啊。</p> <p>其实我就是说说async好,不存在任何语法上的教程。如果想了解或者深入了解相关知识，很明显你需要这个<a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener noreferrer">ES6入门教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>; 建议多学习一些基本语法,算法,设计模式相关的知识。要知其然还要知其所以然。</p> <p>这里是‘获取win10壁纸’的项目原址：<a href="https://github.com/guobing1993/win10-spotlight" target="_blank" rel="noopener noreferrer">win10spotlight<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/javascript/sequelize同步表结构.html" class="prev">
+        sequelize同步表结构
+      </a></span> <span class="next"><a href="/notes/javascript/vue组件继承.html">
+        vue组件继承
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3d904a69.js" defer></script><script src="/assets/js/2.3e037fbb.js" defer></script><script src="/assets/js/16.28258dac.js" defer></script>
+  </body>
+</html>
